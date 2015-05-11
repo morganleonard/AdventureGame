@@ -1,0 +1,95 @@
+{
+  "rooms": [
+    {
+      "message": "You are in a room A, there are doors to the North and East.",
+      "name": "A",
+      "north": "D",
+      "east": "B",
+      "south": null,
+      "west": null
+    },
+    {
+      "message": "You are in a room B, there are doors to the North, East and West.",
+      "name": "B",
+      "north": "E",
+      "east": "C",
+      "south": null,
+      "west": "A",
+      "entrance": "south"
+    },
+    {
+      "message": "You are in a room C, there is a door to the West",
+      "name": "C",
+      "north": null,
+      "east": null,
+      "south": null,
+      "west": "B"
+    },
+    {
+      "message": "You are in a room D, there are doors to the North and South",
+      "name": "D",
+      "north": "G",
+      "east": null,
+      "south": "A",
+      "west": null
+    },
+    {
+      "message": "You are in a room E, there are doors to the East and South",
+      "name": "E",
+      "north": null,
+      "east": "F",
+      "south": "B",
+      "west": null
+    },
+    {
+      "message": "You are in a room F, there is a door to the West",
+      "name": "F",
+      "north": null,
+      "east": null,
+      "south": null,
+      "west": "E"
+    },
+    {
+      "message": "You are in a room G, there are doors to the North and South",
+      "name": "G",
+      "north": "H",
+      "east": null,
+      "south": "D",
+      "west": null
+    },
+    {
+      "message": "You are in a room H, there are doors to the East and South",
+      "name": "H",
+      "north": null,
+      "east": "I",
+      "south": "G",
+      "west": null
+    },
+    {
+      "message": "You are in a room I, there are doors to the East and West",
+      "name": "I",
+      "north": null,
+      "east": "J",
+      "south": null,
+      "west": "H"
+    },
+    {
+      "message": "You are in a room J, there are doors to the East and West",
+      "name": "J",
+      "north": null,
+      "east": "K",
+      "south": null,
+      "west": "I",
+      "treasure": false
+    },
+    {
+      "message": "You found the treasure!!",
+      "name": "K",
+      "north": null,
+      "east": null,
+      "south": null,
+      "west": "J",
+      "treasure": true
+    }
+  ]
+}
