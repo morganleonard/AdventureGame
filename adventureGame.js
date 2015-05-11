@@ -13,7 +13,7 @@ var rl = readline.createInterface({
 var currentRoom = "B";
 var currentRoomIndex = 1;
 
-//function to display message from current room and return array index of current room
+//function to display message from current room
 var displayMessage = function() {
   for (var i = 0; i < 10; i++)
   {
@@ -24,6 +24,7 @@ var displayMessage = function() {
   }
 };
 
+//function to get current room index
 var getCurrentRoomIndex = function() {
   for (var i = 0; i < 11; i++)
   {
