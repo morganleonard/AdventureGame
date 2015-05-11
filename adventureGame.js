@@ -20,10 +20,8 @@ var displayMessage = function() {
     if (game.rooms[i].name === currentRoom)
     {
     console.log(game.rooms[i].message);
-    //currentRoomIndex = i;
     }
   }
-  //return currentRoomIndex;
 };
 
 var getCurrentRoomIndex = function() {
@@ -31,7 +29,6 @@ var getCurrentRoomIndex = function() {
   {
     if (game.rooms[i].name === currentRoom)
     {
-    //console.log(game.rooms[i].message);
     currentRoomIndex = i;
     }
   }
