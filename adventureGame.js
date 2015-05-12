@@ -1,7 +1,16 @@
 
-require('./node_modules').map(require(process.argv[2]));
+//require('./node_modules').map(require(process.argv[2]));
+//var map = require('./node_modules').map(require(process.argv[2]));
 
+
+
+
+//create variable for list of rooms from .JSON file
 var game = require("./" + process.argv[2]);
+
+//create variable that creates initial
+var map = require('./node_modules').map(game);
+
 
 var readline = require('readline');
 
@@ -12,6 +21,7 @@ var rl = readline.createInterface({
 
 var currentRoom = "B";
 var currentRoomIndex = 1;
+
 
 //function to display message from current room
 var displayMessage = function() {
@@ -24,13 +34,14 @@ var displayMessage = function() {
   }
 };
 
-//function to get current room index
+//function to get current room index, and updated the visited member of the current room
 var getCurrentRoomIndex = function() {
   for (var i = 0; i < 11; i++)
   {
     if (game.rooms[i].name === currentRoom)
     {
     currentRoomIndex = i;
+    game.rooms[i].visited = true;
     }
   }
   return currentRoomIndex;
@@ -48,6 +59,7 @@ var playGame = function () {
 
   else
   {
+    console.log(require('./node_modules').map(game));  //display map with current visited rooms (updated in variable 'games')
     displayMessage();
     rl.question("Which way do you want to go? ", function(choice){
 
