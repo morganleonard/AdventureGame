@@ -34,7 +34,7 @@ var displayMessage = function() {
   }
 };
 
-//function to get current room index, and updated the visited member of the current room
+//function to get current room index, and update the 'visited' member of the current room
 var getCurrentRoomIndex = function() {
   for (var i = 0; i < 11; i++)
   {
